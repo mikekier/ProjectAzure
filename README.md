@@ -5,9 +5,9 @@ The files in this repository were used to configure the network depicted below.
 
 ![](Images/kiernetwork.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment pictured above. Alternatively, select portions of the elk-install.yml file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to recreate the entire deployment pictured above. Alternatively, select portions of the install-elk.yml file may be used to install only certain pieces of it, such as Filebeat.
 
-  - elk-install.yml
+  - install-elk.yml
 
 This document contains the following details:
 - Description of the Topology
