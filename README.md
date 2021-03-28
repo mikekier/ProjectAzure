@@ -40,7 +40,7 @@ The configuration details of each machine may be found below:
 
 The machines on the internal network (Web-1, Web-2 and DVWA-VM3) are not exposed to the public Internet. 
 
-Only the Jump Box can accept connections from the Internet. Access to this machine is only allowed from the following IP address which is my home IP: 73.50.96.196 
+Only the Jump Box and the ELKVM can accept connections from the Internet. Access to these machines is only allowed from the following IP address which is my home IP: 73.50.96.196 
 
 Machines within the network can only be accessed by the Jump Box and the ELKVM.
 
@@ -68,7 +68,7 @@ The Elk installation playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-!(Images/docker_ps_output.png)
+![](Images/docker_ps-output.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
