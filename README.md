@@ -17,6 +17,7 @@ This document contains the following details:
   - Machines Being Monitored
 - How to Use the Ansible Build
 
+***
 
 ### Description of the Topology
 
@@ -36,6 +37,8 @@ The configuration details of each machine may be found below:
 | DVWA-VM3                    | VM                      | Testing           | 10.0.0.15  | East     | Linux            |
 | ELKVM                       | VM                      | System Monitoring | 10.1.0.4   | West     | Linux            |
 
+***
+
 ### Access Policies
 
 The machines on the internal network (Web-1, Web-2 and DVWA-VM3) are not exposed to the public Internet. 
@@ -54,6 +57,8 @@ A summary of the access policies in place can be found in the table below:
 | DVWA-VM3 | 10.0.0.15 | No                  | 10.0.0.4, 10.1.0.4                        |
 | ELKVM    | 10.1.0.4  | Yes (restricted)    | 10.0.0.13, 10.0.0.14, 10.0.0.15, 10.0.0.4 |
 
+***
+
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because it ensures scalability, consistency, and reliability of your IT environment. That is, through the use of automation, we can scale up your environment to whatever level you need in a relatively short amount of time while also ensuring deployment and configuration consistency across all your servers as well as keep them up-to-date.
@@ -70,6 +75,8 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ![](Images/docker_ps-output.png)
 
+***
+
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 * 10.0.0.13
@@ -81,6 +88,8 @@ We have installed the following Beats on these machines:
 * Metricbeat
 
 These Beats allow us to collect various logs and metrics concerning each machine in the network such as data about the file system, including which files changed and when, and machine metrics such as uptime, CPU and memory usage.  This is useful information because together with Kibana, it enables us to detect whether an attack is occurring or has occurred.  
+
+***
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
